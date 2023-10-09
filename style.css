@@ -1,0 +1,19 @@
+/*--------------------*/
+
+p:first-child::first-letter {
+  color: hotpink;
+
+  font-size: 4rem;
+  line-height: 1;
+  float: left;
+}
+
+p {
+  font-size: 40px;
+}
+
+.testdiv {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
