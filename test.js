@@ -17,9 +17,8 @@ const formatText = (inputText) => {
     }
   }
 
-  const formattedText = sentences.join("").replaceAll(".", ". ");
-
-  return formattedText;
+  let formattedText = sentences.join("").replaceAll(".", ". ");
+  return formattedText.replaceAll(/\*\*(?:\d+)?\.|\*(?:\d+)?\.|\d+\./g, "");
 };
 
 const textArea = document.querySelector(".textarea");
